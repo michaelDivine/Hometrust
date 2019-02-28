@@ -1,0 +1,187 @@
+/*!
+ * Start Bootstrap - The Big Picture (https://startbootstrap.com/template-overviews/the-big-picture)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-the-big-picture/blob/master/LICENSE)
+ */
+
+/* Background image styling template */
+.background-image {
+  background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+/* Styling for transitions between images */
+.toggle-image {
+ 	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+ 	height: 100%;
+	transition: opacity 2s ease-in-out;
+}
+
+/* Interior shot stylings */
+.first-image {
+	background-image: url('../img/bg/1.jpg');
+	z-index: -4;
+	opacity: 0;
+}
+
+.second-image {
+	background-image: url('../img/bg/2.jpg');
+	z-index: -3;
+	opacity: 0;
+}
+
+.third-image {
+	background-image: url('../img/bg/3.jpg');
+	z-index: -2;
+	opacity: 0;
+}
+
+.fourth-image {
+	background-image: url('../img/bg/4.jpg');
+	z-index: -1;
+	opacity: 0;
+}
+
+.first-image.show {
+	opacity: 1;
+}
+
+.second-image.show {
+	opacity: 1;
+}
+
+.third-image.show {
+	opacity: 1;
+}
+
+.fourth-image.show {
+	opacity: 1;
+}
+
+
+/* Bootstrap Hometrust-specific overrides */
+.navbar .navbar-brand img {
+	height: 2.2em;
+}
+
+.nav-item .nav-link {
+	font-size: 1.2em;
+}
+
+.fixed-top {
+	background: rgba(255, 255, 255, 0.6) !important;
+}
+
+.hometrust-landing {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20%;
+	color: white;
+	font-size: 1.2em;
+	background-color: rgba(124, 149, 178, 0.9); /* #7C95B2 Hometrust blue */
+	border-radius: 25px;
+}
+
+.hometrust-section {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20%;
+	font-size: 1.2em;
+	height: 100vh;
+}
+
+.hometrust-section a {
+	text-decoration: underline;
+}
+
+.hometrust-section-alt {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20%;
+	color: white;
+	font-size: 1.2em;
+	height: 100vh;
+}
+
+.hometrust-section-alt a {
+	text-decoration: underline;
+	color: #1111ff;
+}
+
+.hometrust-section-alt a:hover {
+	text-decoration: underline;
+	color: #4747ff;
+ }
+
+.hometrust-blue {
+	background-color: rgba(124, 149, 178, 1);
+}
+
+section {
+	height: 100vh;
+}
+
+/* "Learn More" arrow on landing */
+.img-scroll {
+  width: 4vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  margin-top: 4vh;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.img-scroll:hover {
+  filter: alpha(opacity=20); /* For IE8 and earlier */
+}
+
+.learn {
+  position: relative;
+  opacity: 1;
+}
+
+.learn:hover {
+	opacity: 0.6;
+}
+
+.learn-arrow {
+    left: 0;
+    position:absolute;
+    text-align:center;
+    width: 100%;
+    z-index: 5;
+    bottom: 2vh;
+}
+
+.learn-text {
+  font-size: 1.5rem;
+  left: 0;
+  position:absolute;
+  text-align:center;
+  width: 100%;
+  z-index: 5;
+  bottom: -3vh;
+}
+
+/* Mobile tweaks, in-progress
+@media (max-width: 8000px) {
+	html, body {
+		overflow-x: hidden;
+	}
+
+	.landing {
+		height: 100vh;
+	}
+
+	.learn {
+		position: absolute;
+	}
+}
+*/
