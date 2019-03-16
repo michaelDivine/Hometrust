@@ -13,6 +13,22 @@
   -o-background-size: cover;
 }
 
+/* Bootstrap hr fix */
+hr {
+  -moz-border-bottom-colors: none;
+  -moz-border-image: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #EEEEEE -moz-use-text-color #FFFFFF;
+  border-style: solid none;
+  border-width: 1px 0;
+  width: 33%;
+  margin: auto;
+  margin-bottom: 3em;
+  margin-top: 3em;
+}
+
 /* Styling for transitions between images */
 .toggle-image {
  	position: absolute;
